@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./Document_files/style.css">
+    <link rel="stylesheet" href="./Document_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+<body>
+    <p>Your Gold: 0</p>
+    <h1 class="text-center" style="color: gold">Ninja Gold</h1>
+    <div id="wrapper">
+        <div class="forms">
+            <div class="form_info">
+                <h2>Farm</h2>
+                <h5>(Earn 10-20 coins)</h5>
+                <form method="POST" action="http://localhost:8000/submit">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="wfTd41MHKYUGU05FRO6EznzGbZfA43Z6cRUe3JaArmNpN5NA7SMt35jqqeghSgc3">
+                    <input type="hidden" name="locations" value="farm">
+                    <button name="farm" class="btn btn-info" type="submit">Find Gold!</button>
+                </form>
+            </div>
+            
+            <div class="form_info">
+                <h2>Cave</h2>
+                <h5>(Earn 5-10 coins)</h5>
+                <form method="POST" action="http://localhost:8000/submit">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="wfTd41MHKYUGU05FRO6EznzGbZfA43Z6cRUe3JaArmNpN5NA7SMt35jqqeghSgc3">
+                    <input type="hidden" name="locations" value="cave">
+                    <button name="cave" class="btn btn-info" type="submit">Find Gold!</button>           
+                </form>
+            </div>
+            
+            <div class="form_info">
+                <h2>House</h2>
+                <h5>(Earn 2-5 coins)</h5>
+                <form method="POST" action="http://localhost:8000/submit">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="wfTd41MHKYUGU05FRO6EznzGbZfA43Z6cRUe3JaArmNpN5NA7SMt35jqqeghSgc3">
+                    <input type="hidden" name="locations" value="house">
+                    <button name="house" class="btn btn-info" type="submit">Find Gold!</button>
+                </form>
+            </div>
+            
+            <div class="form_info">
+                <h2>Casino</h2>
+                <h5>(Earn/take 0-50 coins)</h5>
+                <form method="POST" action="http://localhost:8000/submit">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="wfTd41MHKYUGU05FRO6EznzGbZfA43Z6cRUe3JaArmNpN5NA7SMt35jqqeghSgc3">
+                    <input type="hidden" name="locations" value="casino">
+                    <button name="casino" class="btn btn-info" type="submit">Find Gold!</button>
+                </form>
+            </div>
+            <a href="http://localhost:8000/reset"><button style="margin-right: 10px; height: 50px;" type="submit" class="btn btn-danger">Reset</button></a>
+
+        </div>
+
+        
+    </div>
+
+
+
+    <script src="./Document_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="./Document_files/popper.min.js.download" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="./Document_files/bootstrap.min.js.download" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<div class="activities">
+    
+</div>
+</body></html>

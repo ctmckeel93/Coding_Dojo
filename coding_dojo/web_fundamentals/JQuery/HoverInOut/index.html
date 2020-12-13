@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover In/Out</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $('document').ready(function(){
+        $('img:nth-child(1)').hover(function (){
+            $(this).attr('src', 'dragon5.png')
+            },
+            function() {
+                $(this).attr('src' , 'dragon1.png')
+            })   
+
+            
+        $('img:nth-child(2)').hover(function (){
+            $(this).attr('src', 'dragon6.png')
+            },
+            function() {
+                $(this).attr('src' , 'dragon2.png')
+            })   
+
+            
+        $('img:nth-child(3)').hover(function (){
+            $(this).attr('src', 'dragon7.png')
+            },
+            function() {
+                $(this).attr('src' , 'dragon3.png')
+            })   
+
+            
+        $('img:nth-child(4)').hover(function (){
+            $(this).attr('src', 'dragon8.png')
+            },
+            function() {
+                $(this).attr('src' , 'dragon4.png')
+            })   
+    })
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <img src="dragon1.png" alt="Armored dragon">
+        <img src="dragon2.png" alt="Bronze Dragon">
+        <img src="dragon3.png" alt="Red Dragon">
+        <img src="dragon4.png" alt="Blackish Dragon">
+        </div>
+    
+    
+</body>
+</html>

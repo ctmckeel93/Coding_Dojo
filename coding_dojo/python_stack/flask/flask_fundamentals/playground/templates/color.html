@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #wrapper{
+            height: 500px;
+            min-width: 500px;
+            display: flex;
+            margin: 25 auto;
+            border: black 1px solid;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+
+        div.boxes {
+            height: 300px;
+            width: 300px;
+            margin: 30px;
+            background-color:{{color}};
+
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        {% for i in range(0, times):%}
+        <div class="boxes"></div>
+        {% endfor %}
+        
+    </div>
+</body>
+</html>

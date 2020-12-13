@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 1500px;
+    width: 1020px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: rgb(27, 27, 27);
+
+}
+
+#modernize {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+}
+
+
+#navbar {
+    height: 50px;
+    display: flex;
+    width: 975px;
+    padding-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgb(95, 92, 92);
+    color: white;
+}
+
+#navbar nav {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    /* border: orangered 1px solid; */
+    margin-right: 250px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#main-photo {
+    /* border: green 2px solid; */
+    height: 350px;
+
+}
+
+#main_photo img{
+    width: 50%;
+    
+}
+
+.spanish-headings {
+    color: orange;
+    font-size: x-small;
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 70px;
+    
+    
+}
+
+.spanish-headings h2 {
+    margin-right: 10px;
+}
+
+#spanish-section1 {
+    /* border: purple 2px solid; */
+    height: 250px;
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
+    color: white;
+
+}
+
+#spansh-section1.space {
+    text-indent: 10px;
+}
+
+#spanish-section2 {
+    height: 200px;
+    border-top: silver;
+    border-bottom: silver;
+    color: white;
+    
+}
+
+.buy-button button {
+    margin-left: 850px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20%;
+    background-color: rgb(253, 135, 92);
+}
+
+#portfolio {
+    margin-top: 30px;
+    color: white;
+
+}
+
+span {
+    width: 900px;
+    margin-left: 725px;
+    color: orange;
+}
+
+.portfolio-img {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-left: 150px; */
+}
+
+.portfolio-text {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: turquoise 1px solid; */
+    width: 970px;
+    margin-left: 25px;
+    color: white;
+    
+    
+}
+
+.highlight {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h3 {
+    margin-left: 25px;
+}
+
+h4 {
+    width: 200px;
+    display: flex;
+    align-items: column;
+    font-size: 14pt;
+    color: orange;
+}
+
+footer {
+    color: white;
+}

@@ -1,0 +1,11 @@
+button {
+    background: linear-gradient( rgb(118, 188, 235) 50%, rgb(86, 170, 238) 50%);
+    height: 20px;
+    width: 60px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}

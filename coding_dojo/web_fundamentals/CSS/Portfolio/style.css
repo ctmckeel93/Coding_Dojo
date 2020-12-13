@@ -1,0 +1,184 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+    padding: 10px;
+}
+
+    #wrapper {
+    background-color: red;
+    background-image: linear-gradient(180deg,brown, lightgray,brown);
+    width: 830px;
+    margin: 0px 20px 0px 300px;
+    display:inline-block;
+    vertical-align: top;
+}
+
+#name {
+    display: inline-flex;
+    
+}
+
+h1 span {
+    margin-left: 330px;
+    font-size: smaller;
+    margin-right: 10px;
+}
+
+h1 {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    width: 830px;
+    font-size: 17pt;
+    background-color: rgb(207, 207, 207);
+    text-indent: 10px;
+}
+
+
+
+#main_photo {
+    Width: 40%;
+    height: auto;
+    border: 5px solid silver;
+    margin-left: 25px;
+    margin-top: 25px
+    
+
+}
+
+#About_Me {
+    display: inline-block;
+    vertical-align: top;
+    width: 420px ;
+    height: 250px;
+    margin-left: 20px;
+    margin-top: 28px;
+    background-color: white;  
+}
+
+#About_Me h2 {
+    background-color: rgb(82, 79, 79);
+    color: white;
+    text-indent: 10px;
+}
+
+.continue {
+    margin-left: 10px;
+    color: black;
+}
+
+
+
+
+#hero {
+    width: 970px;
+    display: flex;
+    align-items: center;
+    align-content: space-between ;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+#hero .mode  {
+    height: auto;
+    width: 243px;
+    background-color: white;
+    margin-right: 25px;
+}
+
+.mode h2 {
+    background-color: rgb(82, 79, 79);
+    padding-left: 10px;
+    color:white;
+}
+
+
+a .pic {
+    width: 243px;
+}
+
+#technologies {
+    display: flex;
+    align-content: space-between;
+    margin-right: 0px;
+    height: 230px;
+}
+
+.tech-icons {
+    background-color: white;
+    width: 243px;
+    margin-right: 25px;
+}
+
+.tech-icons h2 {
+    background-color: rgb(82, 79, 79);
+    color: white;   
+    margin: auto; 
+}
+
+.tech-icons img {
+    text-align: center;
+    width: 35px;
+    margin-left: 5px;
+    margin-top: 10px;
+    
+}
+
+p {
+    padding: 10px;
+}
+
+.tech-btn-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tech-btn {
+    min-width: 50px;
+    background-color: seagreen;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;;
+}
+footer{
+    margin-left: 200px;
+    display: flex;
+    height: 30px;
+    width: 970px;
+    font-size: 19pt;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.email {
+    vertical-align: top;
+    display: inline-block;
+    width: 1500px;
+    align-text:center;
+    margin-left: 300px;
+
+}
+
+
+
+.links img {
+    width: 50px;
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+

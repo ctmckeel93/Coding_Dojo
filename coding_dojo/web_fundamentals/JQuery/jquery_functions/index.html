@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+        
+        $('.show').hide();
+        $('.toggle').hide();
+        $('.slideD').hide();
+        $('slideT').hide();
+        $('.fadeIn').hide();
+
+        $('#click').click(function(){
+            alert('I never knew')
+        })
+
+        $('#hide').click(function(){
+            $('.hide').hide();
+        })
+
+        $('#show').click(function() {
+            $('.show').show();
+        })
+        $('#toggle').click(function(){
+            $('.toggle').toggle();
+        })
+
+        $('#slideD').click(function(){ 
+            $('.slideD').slideDown();
+            })
+        
+        $('#slideU').click(function() {
+            $('.slideU').slideUp();
+        })
+        $('#slideTog').click(function(){
+            $('.slideT').slideToggle();
+        })
+        $('#fadeIn').click(function(){
+            $('.fadeIn').fadeIn();
+        })
+        $('#fadeOut').click(function(){
+            $('.fadeOut').fadeOut();
+        })
+        $('#addClass').click(function(){
+            $('.addClass').addClass("red")
+        })
+
+        $('#before').click(function(){
+            $('.before').before("I'm in");
+        })
+
+        $('#after').click(function(){
+            $('.after').after('seconds left in overtime');
+        })
+
+        $('#append').click(function(){
+            $('.append').append(' your mind~');
+        })
+
+        $('#html').click(function (){
+            $('.html').html("<b>Over My Head(Cable Car)</b>")
+        })
+        $('#attr').click(function(){
+            $('.attr').attr( 'href','thefray2.png')
+        })
+
+        
+    })
+
+        
+    </script>
+
+    
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div class="buttons">
+            <button id="click">Click me!</button>
+        </div>
+        <div class="description">
+            <h1>.click</h1>
+            <br>
+            <p>I never knew</p>
+        </div>
+        
+        <div class="buttons">
+            <button id="hide">that everything was</button>
+        </div>
+        <div class="description">
+            <h1>.hide</h1>
+            <br>
+            <p class='hide'>Falling through</p>
+        </div>
+        
+        <div class="buttons">
+            <button id="show">That everyone I knew was</button>
+        </div>
+        <div class="description">
+            <h1>.show</h1>
+            <br>
+            <p class="show">Waiting on a cue</p>
+        </div>
+        
+        <div class="buttons">
+            <button id="toggle">To turn and run</button>
+        </div>
+        <div class="description">
+            <h1>.toggle</h1>
+            <br>
+            <p class="toggle">but all I needed was the truth...</p>
+        </div>
+        
+        <div class="buttons">
+            <button id="slideD">If that's how its</button>
+        </div>
+        <div class="description">
+            <h1>.click</h1>
+            <br>
+            <p class='slideD'>gotta be</p>
+        </div>
+        
+        <div class="buttons">
+            <button id='slideU'>It coming down to nothing more than</button>
+        </div>
+        <div class="description">
+            <h1>.click</h1>
+            <br>
+            <p class='slideU'>Apathy</p>
+        </div>
+        
+        <div class="buttons">
+            <button id='slideTog'>Id rather run the other way than</button>
+        </div>
+        <div class="description">
+            <h1>.click</h1>
+            <br>
+            <p class='slideT'>stay and see</p>
+        </div>
+        
+        <div class="buttons">
+            <button id='fadeIn'>the smoke when you're still</button>
+        </div>
+        <div class="description">
+            <h1>.click</h1>
+            <br>
+            <p class='fadeIn'>standing</p>
+        </div>
+        
+        <div class="buttons">
+            <button id="fadeOut">When it</button>
+        </div>
+        <div class="description">
+            <h1>.click</h1>
+            <br>
+            <p class='fadeOut'>Clears</p>
+        </div>
+        
+        <div class="buttons">
+            <button id="addClass">Oh</button>
+        </div>
+        <div class="description">
+            <h1>.click</h1>
+            <br>
+            <p class="addClass">EVERYONE!</p>
+        </div>
+        
+        <div class="buttons">
+            <button id="before">Knows</button>
+        </div>
+        <div class="description">
+            <h1>.click</h1>
+            <br>
+            <p class="before">Over my head</p>
+        </div>
+        
+        <div class="buttons">
+            <button id='after'>Over my head~</button>
+        </div>
+        <div class="description">
+            <h1>.click</h1>
+            <br>
+            <p class='after'>with eight</p>
+        </div>
+        
+        <div class="buttons">
+            <button id='append'>Shes on your mind</button>
+        </div>
+        <div class="description">
+            <h1>.click</h1>
+            <br>
+            <p class='append'>She's on</p>
+        </div>
+        
+        <div class="buttons">
+            <button id='html'>That was</button>
+        </div>
+        <div class="description">
+            <h1>.click</h1>
+            <br>
+            <p class='html'>Over My Head</p>
+        </div>
+        
+        <div class="buttons">
+            <button id='attr'>By</button>
+        </div>
+        <div class="description">
+            <h1>.click</h1>
+            <br>
+            <p class='attr'>The Fray</p>
+        </div>
+        
+        <div class="buttons">
+            <button>Thank</button>
+        </div>
+        <div class="description">
+            <h1>.click</h1>
+            <br>
+            <p>You</p>
+        </div>
+        
+        <div class="buttons">
+            <button>and</button>
+        </div>
+        <div class="description">
+            <h1>.click</h1>
+            <br>
+            <p>...</p>
+        </div>
+            
+        </div>
+    </div>
+</body>
+</html>

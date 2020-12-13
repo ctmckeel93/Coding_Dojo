@@ -1,0 +1,74 @@
+Query 1:
+
+In [4]: User.objects.create(name="Chuck Norris", email="opm@email.com", age= 40)
+Out[4]: <User: User object (1)>
+
+In [5]: User.objects.create(name="Chuck Norris", email="opm@email.com", age= 40)
+Out[5]: <User: User object (2)>
+
+In [6]: User.objects.create(name="Chuck Norris", email="opm@email.com", age= 40)
+Out[6]: <User: User object (3)>
+
+In [7]: User.objects.create(name="Chuck Norris", email="opm@email.com", age= 40)
+Out[7]: <User: User object (4)>
+
+Query 2:
+
+In [9]: User.objects.all()
+Out[9]: <QuerySet [<User: User object (1)>, <User: User object (2)>, <User: User object (3)>, <User: User object (4)>]>
+
+Query 3: 
+
+In [10]: User.objects.last()
+Out[10]: <User: User object (4)>
+
+Query 4:
+
+In [11]: User.objects.first()
+Out[11]: <User: User object (1)>
+
+Query 5:
+
+In [12]: user3 = User.objects.get(id=3)
+
+In [13]: user3.name = "Chuck Pancakes"
+
+In [14]: user3.name()
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-14-8a24905f5e85> in <module>
+----> 1 user3.name()
+
+TypeError: 'str' object is not callable
+
+In [15]: user3.save()
+
+In [16]: User__dict__
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-16-8c923b2f338c> in <module>
+----> 1 User__dict__
+
+NameError: name 'User__dict__' is not defined
+
+In [17]: user3.name
+Out[17]: 'Chuck Pancakes'
+
+Query 6:
+
+In [22]: user2.delete()
+Out[22]: (1, {'user_app.User': 1})
+
+In [23]: User.objects.all()
+Out[23]: <QuerySet [<User: User object (1)>, <User: User object (3)>, <User: User object (4)>]>
+
+Query 7:
+
+In [33]: User.objects.all().order_by('name')
+Out[33]: <QuerySet [<User: User object (1)>, <User: User object (4)>, <User: User object (3)>]>
+
+Query 8(bonus)
+
+In [39]: User.objects.all().order_by("-name")
+Out[39]: <QuerySet [<User: User object (3)>, <User: User object (1)>, <User: User object (4)>]>
+

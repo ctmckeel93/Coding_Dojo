@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.row{
+    min-height:400px;
+    width: 425px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.reds{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+.blacks{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+    

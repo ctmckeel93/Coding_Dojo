@@ -1,0 +1,105 @@
+* {
+   margin: 0;
+   padding: 0; 
+   
+}
+    
+    
+    #wrapper {
+  background-color:rgb(35, 35, 95);
+  min-height: 300px;
+  width: 970px;
+  padding: 10px 0px 10px 10px;
+  margin: 25% 0% 10% 25%;
+  display: inline-block
+}
+
+#header {
+    background-color: rgb(212, 5, 5);
+    min-height: 50px;
+    width: 96%;
+    /* margin-left: 10px; */
+    /* margin-bottom: 0px; */
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-top: 10px;
+    font-size: 20pt;
+    color: white
+}
+
+#hero {
+    min-height: 350px;
+    vertical-align: top;
+    padding-top: 15px;
+    padding-left: 0px;
+    
+}
+
+nav {
+    background-color: rgb(8, 168, 168);
+    width: 165px;
+    min-height: 200px;
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 15px;
+    text-align: left;
+    padding-right: 15px;
+    padding-left: 20px;
+    border: 2px solid black;
+    color: lightskyblue;
+    text-decoration: underline;
+}
+
+#basics {
+    background-color: rgb(10, 7, 53);
+    color:lightgrey;
+    min-height: 450px;
+    width: 713px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 0 10px 15px;
+    padding-left: 20px;
+    border-radius: 15px;
+    font-size: 12pt;
+    padding-top: 10px;
+
+}
+
+#bottom-bar {
+    background-color: grey;
+    min-height: 30px;
+    width: 955px;
+    margin-left: 0px ;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+    color: white;
+}
+
+li{
+    font-size: 10pt;
+    text-align: left;
+}
+
+.sub-links {
+    text-indent: 35px;
+    color: lightskyblue;
+    text-decoration: underline;
+    
+}
+
+.links {
+    text-indent: 15px;
+    color: lightskyblue;
+    text-decoration: underline;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+
+}
+
+p {
+    margin-bottom: 10px;
+}

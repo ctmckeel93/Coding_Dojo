@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappearing Ninja</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $('document').ready(function(){
+        $('.ninja1 img').click(function (){
+            $(this).hide();
+        })
+        $('.ninja2 img').click(function () {
+            $(this).hide();
+        })
+        $('.ninja3 img').click(function () {
+            $(this).hide();
+        })
+        $('.ninja4 img').click(function () {
+            $(this).hide();
+        })
+        $('.ninja5 img').click(function () {
+            $(this).hide();
+        })
+        $('.ninja6 img').click(function () {
+            $(this).hide();
+        })
+        $('.ninja7 img').click(function () {
+            $(this).hide();
+        })
+        $('.ninja8 img').click(function () {
+            $(this).hide();
+        })
+        $('.reset').click(function() {
+            $('#wrapper *').show();
+        })
+    })
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class='ninja1'><img src="ninja.png" alt="ninja"></div>
+        <div class='ninja2'><img src="ninja.png" alt="ninja"></div>
+        <div class='ninja3'><img src="ninja.png" alt="ninja"></div>
+        <div class='ninja4'><img src="ninja.png" alt="ninja"></div>
+        <div class='ninja5'><img src="ninja.png" alt="ninja"></div>
+        <div class='ninja6'><img src="ninja.png" alt="ninja"></div>
+        <div class='ninja7'><img src="ninja.png" alt="ninja"></div>
+        <div class='ninja8'><img src="ninja.png" alt="ninja"></div>
+        <div>
+            <button class='reset'>Restore</button>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>

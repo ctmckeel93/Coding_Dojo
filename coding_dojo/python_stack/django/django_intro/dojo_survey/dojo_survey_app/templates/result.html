@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% csrf_token %}
+</head>
+<body>
+    <div id="wrapper">
+        <div>
+            <h2><u>Submitted info:</u></h2>
+            <p>Name: {{fname}}</p>
+            <p>Name: {{lname}}</p>
+            <p>Name: {{uname}}</p>
+            <p>City: {{city}}</p>
+            <p>State: {{state}}</p>
+            <p>Zip Code: {{zip}}</p>
+        </div>
+    </div>
+</body>
+</html>

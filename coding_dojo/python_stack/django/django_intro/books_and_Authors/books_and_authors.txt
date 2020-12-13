@@ -1,0 +1,110 @@
+Query 1: 
+
+>>> Book.objects.create(title="C Sharp")
+<Book: Book object (1)>
+>>> Book.objects.create(title="Java")
+<Book: Book object (2)>
+>>> Book.objects.create(title="Python")
+<Book: Book object (3)>
+>>> Book.objects.create(title="PHP")
+<Book: Book object (4)>
+>>> Book.objects.create(title="Ruby")
+<Book: Book object (5)>
+
+Query 2: 
+
+>>> Author.objects.create(first_name="Jane", last_name="Austen")
+<Author: Author object (1)>
+>>> Author.objects.create(first_name="Emily", last_name="Dickenson")
+<Author: Author object (2)>
+>>> Author.objects.create(first_name="Fyodor", last_name="Dostoevsky")
+<Author: Author object (3)>
+>>> Author.objects.create(first_name="William", last_name="Shakespeare")
+<Author: Author object (4)>
+>>> Author.objects.create(first_name="Lau", last_name="Tzu")
+<Author: Author object (5)>
+
+Query 3:
+
+>>> book1.title = "C #"
+>>> boo1.__dict__
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'boo1' is not defined
+>>> book1.__dict__
+{'_state': <django.db.models.base.ModelState object at 0x000001ACEC4C23D0>, 'id': 1, 'title': 'C #'}
+
+Query 4:
+
+>>> author4 = Author.objects.get(id=4)
+>>> author4.first_name = "Bill"
+>>> author4.__dict__
+{'_state': <django.db.models.base.ModelState object at 0x000001ACEC4C27C0>, 'id': 4, 'first_name': 'Bill', 'last_name': 'Shakespeare', 'notes': 'Hello'}
+>>>
+
+Query 5:
+
+>>> book1.authors.add(author1)
+>>> book2.authors.add(author1)
+
+Query 6:
+
+>>> book1.authors.add(author1)
+>>> book2.authors.add(author1)
+>>> book3 = Book.objects.get(id=3)
+>>> author2 = Author.objects.get(id=2)
+>>> book1.authors.add(author2)
+>>> book2.authors.add(author2)
+>>> book3.authors.add(author2)
+
+Query 7:
+
+>>> book1.authors.add(author2)
+>>> book2.authors.add(author2)
+>>> book3.authors.add(author2)
+>>> book4 = Book.objects.get(id=4)
+>>> author3 = Author.objects.get(id=3)
+>>> book1.authors.add(author3)
+>>> book2.authors.add(author3)
+>>> book3.authors.add(author3)
+>>> book4.authors.add(author3)
+
+Query 8:
+
+ book1.authors.add(author4)
+>>> book2.authors.add(author4)
+>>> book3.authors.add(author4)
+>>> book4.authors.add(author4)
+>>> book5.authors.add(author4)
+
+Query 9:
+
+>>> book3.authors.all()
+<QuerySet [<Author: Author object (2)>, <Author: Author object (3)>, <Author: Author object (4)>]>
+
+Query 10:
+
+>>> book3.authors.remove(author1)
+>>> book3.authors.__dict__
+{'_constructor_args': ((<Book: Book object (3)>,), {}), 'creation_counter': 32, 'model': <class 'my_app.models.Author'>, 'name': None, '_db': None, '_hints': {}, 'instance': <Book: Book object (3)>, 'query_field_name': 'books', 'prefetch_cache_name': 'authors', 'source_field_name': 'book', 'target_field_name': 'author', 'symmetrical': False, 'through': <class 'my_app.models.Author_books'>, 'reverse': True, 'source_field': <django.db.models.fields.related.ForeignKey: book>, 'target_field': <django.db.models.fields.related.ForeignKey: author>, 'core_filters': {'books__id': 3}, 'pk_field_names': {'book': 'id'}, 'related_val': (3,)}
+
+Query 11:
+
+>>> author5 = Author.objects.get(id=5)
+>>> book2.authors.add(author5)
+>>> book2.authors.__dict__
+{'_constructor_args': ((<Book: Book object (2)>,), {}), 'creation_counter': 34, 'model': <class 'my_app.models.Author'>, 'name': None, '_db': None, '_hints': {}, 'instance': <Book: Book object (2)>, 'query_field_name': 'books', 'prefetch_cache_name': 'authors', 'source_field_name': 'book', 'target_field_name': 'author', 'symmetrical': False, 'through': <class 'my_app.models.Author_books'>, 'reverse': True, 'source_field': <django.db.models.fields.related.ForeignKey: book>, 'target_field': <django.db.models.fields.related.ForeignKey: author>, 'core_filters': {'books__id': 2}, 'pk_field_names': {'book': 'id'}, 'related_val': (2,)}
+>>> book2.authors.all()
+<QuerySet [<Author: Author object (1)>, <Author: Author object (2)>, <Author: Author object (3)>, <Author: Author object (4)>, <Author: Author object (5)>]>
+
+Query 12:
+
+>>> author3.books.all().values()
+<QuerySet [{'id': 1, 'title': 'C #'}, {'id': 2, 'title': 'Java'}, {'id': 3, 'title': 'Python'}, {'id': 4, 'title': 'PHP'}]>
+>>>
+
+Query 13:
+
+>>> book5.authors.all().values()
+<QuerySet [{'id': 4, 'first_name': 'Bill', 'last_name': 'Shakespeare', 'notes': 'Hello'}]>
+>>>

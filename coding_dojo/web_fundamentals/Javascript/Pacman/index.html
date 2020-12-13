@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id='container'>
+        <div id="world"></div>
+        <div id="pacman"></div>
+        <div id="score">0</div>
+        <div class="ghost"></div>
+        <div id="lives">3</div>
+    </div>
+        
+    <!-- List of things to build -->
+
+    <!-- Have JS display the world! -->
+    <!-- Have pacman moveupand down -->
+
+    <script>
+        
+            let world = [
+    [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],//0
+    [1,0,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,1],//1
+    [1,2,1,1,1,2,1,1,1,2,1,2,1,1,1,2,1,1,1,2,1],//2
+    [1,2,1,0,1,2,1,0,1,2,1,2,1,0,1,2,1,0,1,2,1],//3
+    [1,2,1,1,1,2,1,1,1,2,1,2,1,1,1,2,1,1,1,2,1],
+    [1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1],//5
+    [1,2,1,1,1,2,1,2,1,1,1,1,1,2,1,2,1,1,1,2,1],
+    [1,2,1,1,1,2,1,2,1,1,1,1,1,2,1,2,1,1,1,2,1],//7
+    [1,2,2,2,2,2,1,2,2,2,1,4,2,2,1,2,2,2,2,2,1],
+    [1,1,1,1,1,2,1,1,1,0,1,0,1,1,1,2,1,1,1,1,1],//9
+    [0,0,0,0,1,2,1,0,0,0,0,0,0,0,1,2,1,0,0,0,0],
+    [0,0,0,0,1,2,1,0,1,1,0,1,1,0,1,2,1,0,0,0,0],//11
+    [1,1,1,1,1,2,1,0,1,0,0,0,1,0,1,2,1,1,1,1,1],
+    [0,0,0,0,0,2,0,0,1,0,0,0,1,0,0,2,0,0,0,0,0],//13
+    [1,1,1,1,1,2,1,0,1,1,1,1,1,0,1,2,1,1,1,1,1],
+    [0,0,0,0,1,2,1,0,0,0,0,0,0,0,1,2,1,0,0,0,0],//15
+    [0,0,0,0,1,2,1,0,1,1,1,1,1,0,1,2,1,0,0,0,0],
+    [1,1,1,1,1,2,1,0,1,1,1,1,1,0,1,2,1,1,1,1,1],//17
+    [1,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,4,2,2,2,1],
+    [1,2,1,1,1,2,1,1,1,2,1,2,1,1,1,2,1,1,1,2,1],//19
+    [1,2,2,2,1,2,2,2,2,2,3,2,2,2,2,2,1,2,2,2,1],
+    [1,1,1,2,1,2,1,2,1,1,1,1,1,2,1,2,1,2,1,1,1],//21
+    [1,1,1,2,1,2,1,2,1,1,1,1,1,2,1,2,1,2,1,1,1],
+    [1,2,2,2,2,2,1,2,2,2,1,2,2,2,1,2,2,2,2,2,1],//23
+    [1,2,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,2,1],
+    [1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1],//25
+    [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]//26
+]
+        
+        var pacman = {
+            x: 1,
+            y: 1
+        };
+
+        
+
+        var score = 0;
+        var lives = 3;
+        function displayWorld() {
+            
+            var output = '';
+
+            for (var i = 0; i < world.length; i++) {
+                output += "<div class='row'>";
+                for (var j = 0; j < world[i].length; j++) {
+                    if (world[i][j] == 4) {
+                        output += "<div class='blinky'></div>";
+                        }
+                        
+                    if (world[i][j] == 3) {
+                        output += "<div class='ghost-pen'></div>";
+                        }
+                    else if (world[i][j] == 1) {
+                        output += "<div class='brick'></div>";
+                    } 
+                    else if (world[i][j] == 2) {
+                        output += "<div class='coin'></div>";
+                        }
+                    else if (world[i][j] == 0){
+                        output += "<div class='empty'></div>";
+                    }
+
+                }
+                output += "</div>";
+            }
+            console.log(output);
+            document.getElementById('world').innerHTML = output;
+        }
+        function displayPacman (){
+            document.getElementById('pacman').style.top = pacman.y*20+"px";
+            document.getElementById('pacman').style.left = pacman.x*20+"px";     
+        }
+        function displayScore (){
+            document.getElementById('score').innerHTML = score
+        }
+        function displayLives(){
+            document.getElementById('lives').innerHTML = lives
+        }
+        // function reload() {
+        //     if ( [pacman.x,pacman.y].classList.contains('.blinky') && [pacman.x,pacman.y].getElementById.contains('#pacman')){
+        //         alert('GAME OVER');
+        //         displayWorld();
+                
+        //     }
+            
+            
+        // }
+        displayWorld();
+        displayPacman();
+        // reload()
+        
+
+
+        document.onkeydown = function (e) {
+            console.log(e.keyCode);
+            // The following makes pacman move down!!!
+            if (e.keyCode == 40 && world[pacman.y+1][pacman.x] != 1 ) {
+                pacman.y++;
+                document.getElementById('pacman').style.transform = "rotate(90deg)";
+                gameOver()
+                
+            }
+            // the following makes paman move up!!!
+            else if (e.keyCode == 38 && world[pacman.y-1][pacman.x] != 1) {
+                pacman.y--;
+                document.getElementById('pacman').style.transform = "rotate(270deg)"
+                gameOver()
+                
+            }
+            // the following makes pacman move left
+            else if (e.keyCode == 37 && world[pacman.y][pacman.x-1] != 1) {
+                pacman.x--;
+                document.getElementById('pacman').style.transform = "rotate(180deg)"
+                gameOver()
+                
+            }
+            // the following makes pacman move right
+            else if (e.keyCode == 39 && world[pacman.y][pacman.x+1] != 1) {
+                pacman.x++;
+                document.getElementById('pacman').style.transform = "rotate(0deg)"
+                gameOver()
+                
+            }
+            
+            if (pacman.x ==0-1 && pacman.y == 13) {
+                pacman.x = 20
+            }
+            else if (pacman.x == 21 && pacman.y == 13){
+                pacman.x = 0
+            }
+            // Show pacman eating coins and add to the score
+            if (world[pacman.y][pacman.x] == 2) {
+                world[pacman.y][pacman.x] = 0;
+                score += 10
+                displayScore();
+                displayWorld();
+                displayPacman();
+                youWin()
+            }
+            
+            displayPacman()
+            
+        }
+
+        // check for Game Over
+        function gameOver() {
+            if (world[pacman.y][pacman.x] == 4){
+                pacman.x = 1
+                pacman.y = 1
+                lives--
+                displayLives()
+                if (lives == 0){
+                    alert('GAME OVER')
+                    window.location.reload()
+                        
+                }              
+            }
+                
+                    
+                
+        }
+
+        function youWin(){
+            var count = 0
+            for (var i = 0; i < world.length; i++){
+                for (var j= 0; j<world[i].length; j++){
+                    if (world[i][j]==2){
+                            count++
+                        console.log(count)              
+            }
+                                
+                    
+                
+                }
+            }
+            if (count == 0 ){
+                alert('YOU WIN!')
+                window.location.reload()
+            }
+        }
+        
+
+    </script>
+</body>
+
+</html>

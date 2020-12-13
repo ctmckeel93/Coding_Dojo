@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    margin: 20px auto;
+    width: 700px;
+}
+
+img {
+    width: 125px;
+    height: 125px;
+    border: 2px solid red;
+}
+
+img:nth-child(6) {
+    background-color: rgb(248, 39, 39);
+    padding: 20px;
+}

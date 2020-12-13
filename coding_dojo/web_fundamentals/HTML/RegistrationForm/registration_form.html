@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Registration Form</title>
+        <script type="text/html"></script>
+
+    </head>
+    <body>
+        
+            <h1>My Registration Form</h1>
+            
+            <form action="process.php" method="post">
+            <p>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_Name" name="first_Name">
+            </p>
+
+            <p>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+            </p>
+
+            <p>
+            <label for="email">Email:____</label>
+            <input type="text" id="email" name="email" padding=50px>
+            </p>
+            
+            <p>
+            <label for="birthday">Date of Birth:</label>
+            <input type="date" id="birthday" name="birthday">
+            </p>
+
+            <p>
+            <label for="gender">Gender:</label>
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="decline">Prefer not to say</label>
+            <input type="radio" id="decline" name="gender" value="decline">
+            </p>
+
+            <label for="favorite_language">Favorite Language</label>
+            <select name="favorite_language">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+            </select>
+            
+            <p>Finally, tell us a little bit about you</p>
+            <p>
+            <textarea name="description"></textarea>
+            </p>
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password">
+            <label for="pw_confirm">Confirm Password:</label>
+            <input type="text" id="pw_confirm" name="pw_confirm">
+            </p>
+            <p>
+            <input type="Submit" value="Submit">
+            </p>
+        </form>
+        
+    </body>
+</html>

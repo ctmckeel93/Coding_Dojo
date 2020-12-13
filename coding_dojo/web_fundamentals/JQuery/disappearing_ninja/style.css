@@ -1,0 +1,16 @@
+* {
+    margin: 40px auto;
+    padding: 0px;
+}
+
+#wrapper {
+    margin: 20px, auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+img {
+    width: 100px;
+}

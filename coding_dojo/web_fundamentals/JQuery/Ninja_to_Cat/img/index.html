@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja to Cat!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    $('document').ready(function(){
+        $('img:nth-child(1)').click(function(){
+            $(this).attr("src", "cat0.png");
+        })
+        $('.top2 img').click(function(){
+            $(this).attr("src", "cat1.png");
+        })
+        $('.middle img').click(function(){
+            $(this).attr("src", "cat2.png");
+        })
+        $('.bottom2 img').click(function(){
+            $(this).attr("src", "cat3.png");
+        })
+        $('.bottom img').click(function(){
+            $(this).attr("src", "cat4.png");
+        })
+        
+    })
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class='top'><img src="ninja0.png" alt="ninjatop"></div>
+        <div class='top2'><img src="ninja1.png" alt="ninjatop2"></div>
+        <div class='middle'><img src="ninja2.png" alt="ninjamid"></div>
+        <div class='bottom2'><img src="ninja3.png" alt="ninjabottom2"></div>
+        <div class='bottom'><img src="ninja4.png" alt="ninjabottom"></div>
+    </div>
+    
+</body>
+</html>
