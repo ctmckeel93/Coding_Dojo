@@ -1,0 +1,30 @@
+Todo list assignment
+
+Summary : Create a list of todos which change the 'completed' property to true once checked off. Users shoould be able  to create todos and remove as needed.
+
+- Bonus: Do not mutate original object
+- Sensei: allow the information to persit after the page as been reloaded
+
+Components
+
+- Todo list
+- Todo Form
+
+Task list 
+
+todo list
+
+- Create list of todos and render them on the screen
+- create an onClick function that will change the completed status on each todo to true
+- set a condition where if completed status equals true, the box will be checked
+
+todo  Form
+
+- create an input text that is assigned the value of the state of the todo list
+- create an onChange function which changes the set state of the value typed in the text box
+- create an onSubmit function which renders the new information on the app 
+
+Bonus 
+
+- ???
+- set a useEffect (Will elaborate later)

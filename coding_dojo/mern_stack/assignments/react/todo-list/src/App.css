@@ -1,0 +1,16 @@
+
+
+.App {
+  width: 500px;
+  margin: 50px auto;
+  font-size: 20pt;
+}
+
+.App > ul {
+  list-style-type: none;
+  transform: scale(1.5);
+}
+
+.checked {
+  text-decoration: line-through;
+}
