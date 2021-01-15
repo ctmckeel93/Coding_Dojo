@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: teal;
+  color: coral;
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item {
+  color: coral;
+  text-decoration: none;
+}
+
+.styled-word {
+  padding: 20px;
+}
+
